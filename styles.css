@@ -90,19 +90,7 @@ body {
     width: 100%;
 }
 
-.hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
 
-.bar {
-    width: 25px;
-    height: 3px;
-    background-color: #475569;
-    margin: 3px 0;
-    transition: 0.3s;
-}
 
 /* Hero Section */
 .hero {
@@ -551,6 +539,7 @@ section {
     color: #475569;
     transition: all 0.3s ease;
     border: 1px solid #e2e8f0;
+    position: relative;
 }
 
 .social-link:hover {
@@ -616,26 +605,8 @@ section {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .hamburger {
-        display: flex;
-    }
-
     .nav-menu {
-        position: fixed;
-        left: -100%;
-        top: 70px;
-        flex-direction: column;
-        background-color: white;
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-        padding: 2rem 0;
-        border-top: 1px solid #e2e8f0;
-    }
-
-    .nav-menu.active {
-        left: 0;
+        display: none;
     }
 
     .hero-title {
@@ -770,4 +741,28 @@ section {
 /* Smooth scrolling for anchor links */
 html {
     scroll-padding-top: 80px;
+}
+
+.copy-tooltip {
+    display: none;
+    position: absolute;
+    left: 88%;
+    top: 11px;
+    transform: translateX(-88%);
+    background: #222;
+    color: #fff;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.95em;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    z-index: 10;
+    white-space: nowrap;
+}
+
+.copy-tooltip.show {
+    display: block;
+    opacity: 1;
 }

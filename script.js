@@ -1,17 +1,4 @@
-// Mobile Navigation Toggle
-const hamburger = document.querySelector('.hamburger');
-const navMenu = document.querySelector('.nav-menu');
 
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    navMenu.classList.toggle('active');
-});
-
-// Close mobile menu when clicking on a link
-document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
-    hamburger.classList.remove('active');
-    navMenu.classList.remove('active');
-}));
 
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -229,13 +216,6 @@ style.textContent = `
 document.head.appendChild(style); 
 
 document.addEventListener('DOMContentLoaded', () => {
-    const hamburger = document.querySelector('.hamburger');
-    const navMenu = document.querySelector('.nav-menu');
-
-    hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('active');
-        navMenu.classList.toggle('active');
-    });
 
     // Make interactive cards clickable
     const interactiveCards = document.querySelectorAll('.interactive-card');
@@ -273,4 +253,19 @@ document.addEventListener('DOMContentLoaded', () => {
             modal.classList.remove('open');
         }
     });
+
+    const emailLink = document.getElementById('email-link');
+    const copyMessage = document.getElementById('copy-message');
+    if (emailLink) {
+        emailLink.addEventListener('click', function(event) {
+            event.preventDefault();
+            const email = 'xico.reasonzx@gmail.com';
+            navigator.clipboard.writeText(email).then(function() {
+                copyMessage.classList.add('show');
+                setTimeout(() => {
+                    copyMessage.classList.remove('show');
+                }, 1500);
+            });
+        });
+    }
 });
