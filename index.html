@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XicoComXis</title>
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="images/favicon/android-chrome-512x512.png">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">XicoComXis</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">XicoComXis</h1>
+                <p class="hero-subtitle">Software Engineer & Product Developer</p>
+                <p class="hero-description">
+                    Creating innovative solutions across embedded software development, digital assets and web technologies. 
+                    Passionate about building products that make a difference.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a software engineer with expertise in embedded systems, web technologies and digital assets. 
+                        My work spans from embedded systems to modern web applications, always focusing on quality and innovation.
+                    </p>
+                    <p>
+                        Currently working on cutting-edge automotive radar systems and software development tools, 
+                        I bring a unique perspective to every project I undertake.
+                    </p>
+                    <div class="skills">
+                        <h3>Technologies & Skills</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">C/C++</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Embedded Systems</span>
+                            <span class="skill-tag">Radar Systems</span>
+                            <span class="skill-tag">Software Tools</span>
+                            <span class="skill-tag">Web Development</span>
+                            <span class="skill-tag">Git</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Axivion Software Suite</h3>
+                        <span class="company">Qt Company</span>
+                    </div>
+                    <p>
+                        Contributed Axivion, a comprehensive software analysis and quality assurance tool. 
+                        Focused on static code analysis, architecture verification, and software quality metrics.
+                    </p>
+                    <div class="project-preview project-preview--large">
+                        <img src="images/axivion-demo.webp" alt="Axivion Software Suite" class="preview-media contained-image">
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech">C/C++</span>
+                        <span class="tech">Qt Framework</span>
+                        <span class="tech">Static Analysis</span>
+                        <span class="tech">Software Quality</span>
+                    </div>
+                </div>
+
+                <div class="project-card interactive-card" data-url="https://stablio.eu">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-coins"></i>
+                        </div>
+                        <h3>Stablio.eu</h3>
+                        <span class="company">Stablecoin Payments</span>
+                    </div>
+                    <p>
+                        Founded and built a modern web 3.0 website for stablecoin payments and financial transactions. 
+                        Focused on security, user experience, and seamless payment processing.
+                    </p>
+                    <div class="project-preview project-preview--video">
+                        <!-- Video fills the entire preview area -->
+                        <video class="preview-media" autoplay muted loop playsinline>
+                            <source src="images/stablio-demo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech">JavaScript</span>
+                        <span class="tech">Blockchain</span>
+                        <span class="tech">Payment Systems</span>
+                        <span class="tech">Web3</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <h3>CulturaApp</h3>
+                        <span class="company">Music & Culture Events</span>
+                    </div>
+                    <p>
+                        Developing a mobile application for creating and sharing music and cultural events. 
+                        Enables users to discover, organize, and participate in cultural activities.
+                    </p>
+                    <div id="culturaAppPreview" class="project-preview project-preview--app">
+                        <img src="images/culturaApp-demo.jpeg" alt="CulturaApp Screenshot" class="app-screenshot">
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech">React Native</span>
+                        <span class="tech">JavaScript</span>
+                        <span class="tech">Event Management</span>
+                        <span class.tech">Social Features</span>
+                    </div>
+                    <div class="project-links">
+                        <a class="project-link disabled">
+                            <i class="fab fa-app-store"></i>
+                            App Store
+                        </a>
+                        <a class="project-link disabled">
+                            <i class="fab fa-google-play"></i>
+                            Google Play
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <h3>Automotive Radar System</h3>
+                        <span class="company">Bosch</span>
+                    </div>
+                    <p>
+                        Developed advanced automotive radar systems for vehicle safety and autonomous driving applications. 
+                        Worked on embedded software for safety critical algorithms.
+                    </p>
+                    <div class="project-preview project-preview--video">
+                        <!-- Video preview for Bosch -->
+                        <video class="preview-media" autoplay muted loop playsinline>
+                            <source src="images/bosch-radar-demo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech">C/C++</span>
+                        <span class="tech">Embedded Systems</span>
+                        <span class="tech">Signal Processing</span>
+                        <span class="tech">Radar Technology</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-tv"></i>
+                        </div>
+                        <h3>Mercedes Class-E Infotainment</h3>
+                        <span class="company">Bosch</span>
+                    </div>
+                    <p>
+                        Developed together with Mercedes the front display infotainment system for the new Class-E. 
+                        Built embedded software for the vehicle's main display interface and user experience.
+                    </p>
+                    <div class="project-preview project-preview--video">
+                        <!-- Video preview for Bosch Infotainment -->
+                        <video class="preview-media" autoplay muted loop playsinline>
+                            <source src="images/bosch-infotainment-demo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech">C/C++</span>
+                        <span class="tech">Embedded Systems</span>
+                        <span class="tech">UI/UX</span>
+                        <span class="tech">Automotive</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p>
+                        I'm always interested in new opportunities and collaborations. 
+                        Feel free to reach out if you'd like to work together or discuss potential projects. I'm free to help
+                        with websites, mobile apps, embedded software, digital assets or any other projects.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://github.com/ReasonZx" class="social-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://linkedin.com/in/joao-santos-pt/" class="social-link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://x.com/xico_com_xis" class="social-link" target="_blank">
+                            <svg class="x-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg>
+                            <span>X (Twitter)</span>
+                        </a>
+                        <a href="mailto:xico.reasonzx@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 XicoComXis. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
